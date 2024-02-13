@@ -1,0 +1,18 @@
+# https://esphome.io/components/sensor/ads1115.html
+ads1115:
+  - address: 0x48
+    id: ads1115_hub1
+    i2c_id: tca9548a_multiplex0_channel0
+    continuous_mode: on
+  - address: 0x49
+    id: ads1115_hub2
+    i2c_id: tca9548a_multiplex0_channel0
+    continuous_mode: on
+  - address: 0x4A
+    id: ads1115_hub3
+    i2c_id: tca9548a_multiplex0_channel0
+    continuous_mode: on
+  - address: 0x4B
+    id: ads1115_hub4
+    i2c_id: tca9548a_multiplex0_channel0
+    continuous_mode: on

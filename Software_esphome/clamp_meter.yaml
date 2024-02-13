@@ -1,0 +1,65 @@
+substitutions:
+  name: 'clamp_meter'
+
+esphome:
+  name: ${name}
+  comment: ' '
+  area: 'Local Technique'
+  project:
+    name: dackara.${name}
+    version: "1.0"
+
+# https://esphome.io/components/esp32.html
+esp32:
+  board: 'esp32-s3-devkitc-1' #'esp32dev'
+  framework:
+    type: 'arduino' #'esp-idf'
+    version: '2.0.14' #'2.0.11'
+    platform_version: '6.5.0'  #'6.4.0'
+
+# Captive Portal: https://esphome.io/components/captive_portal.html
+captive_portal:
+
+# Logger Component: https://esphome.io/components/logger.html
+logger:
+
+# Native API Component: https://esphome.io/components/api.html
+api:
+
+# OTA Update Component: https://esphome.io/components/ota.html
+ota:
+
+# Web Server: https://esphome.io/components/web_server.html
+web_server:
+  port: 80
+
+# This should point to the public location of this yaml file.
+dashboard_import:
+  package_import_url: github://dackara/clamp_meter/software_esphome/clamp_meter.yaml@main
+  import_full_config: false #true
+
+# WiFi Component: https://esphome.io/components/wifi.html
+wifi:
+  ap:
+    ssid: 'Esp Fallback Hotspot'
+
+# Configuring Wi-Fi on an ESP32 device by using Bluetooth
+esp32_improv:
+  authorizer: none
+
+# Sets up the improv via serial client for Wi-Fi provisioning
+improv_serial:
+
+# https://esphome.io/guides/configuration-types#packages
+packages:
+  device_base: !include packages/base/device_base.yaml
+
+  clamp_meter_1: !include
+    file: packages/clamp_meter/clamp_meter_device.yaml
+    vars:
+      ct_clamp_name: ct_clamp
+      ct_clamp_sufix: '1'
+      ct_clamp_update_interval: '0'
+      ct_clamp_ads1115_hub: 'ads1115_hub1'
+      ct_clamp_multiplexer: 'A0_GND'
+      ct_clamp_gain: '6.144'
