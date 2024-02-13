@@ -52,7 +52,7 @@ L'intégralité des fichiers présents dans [ce répertoire](../main/Software_es
 | __Vue 3D__                | __Circuit__               |
 | ![alt text](../main/Image/3D_View.png) | ![alt text](../main/Image/Circuit.png) |
 | __Schematic__             | __Support DIN 3D__         |
-| ![alt text](../main/Image/Schematic.png) | ![alt text](../main/Hardware/3D_Print/3D_back.png) |
+| ![alt text](../main/Image/Schematic.png) | ![alt text](../main/Image/3D_DIN_mount.png) |
 
 - Fichier **Gerber** et **BOM** : [Dossier Hardware](../main/Hardware)
 - [Fichier 3D](../main/Hardware/3D_Print) à imprimer pour montage de la carte sur rail DIN (tableau électrique).
