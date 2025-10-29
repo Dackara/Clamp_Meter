@@ -27,16 +27,18 @@
 > - [![Static Badge](https://img.shields.io/badge/Home_Assistant-_-black?logo=homeassistant&style=social)](http://homeassistant.io).
 
 ## Ce que permet la carte :
- > - 1 à 16 Clamp (2 montage possible pour chaque sorties : JST-XH pour clamp 2brin ou Jack pour SCT013)
- > - 1 à 4 ADS1115 pré adressé.
- > - 1 TCA9548A (optionel -pontage si pas utilisé) pour multiplexé l'I2C (utile en cas de + de 4 ADS ou conflit d'adresse I2C) avec toutes ses sorties déporté pour utilisation externe.
+ > - 1 à 16 [Clamp de mesure](https://s.click.aliexpress.com/e/_De0j7rx) (2 montage possible pour chaque sorties : [JST-XH](https://s.click.aliexpress.com/e/_DFD76FX) pour clamp 2brin ou [Jack](https://www.lcsc.com/product-detail/C668607.html) pour [SCT013](https://s.click.aliexpress.com/e/_DFRTWIN))
+ > - 1 à 4 [ADS1115](https://s.click.aliexpress.com/e/_DF9geSz) pré adressé.
+ > - 1 [TCA9548A](https://s.click.aliexpress.com/e/_DDACktb) (optionel -pontage si pas utilisé) pour multiplexé l'I2C (utile en cas de + de 4 ADS ou conflit d'adresse I2C) avec toutes ses sorties déporté pour utilisation externe.
  > - 1 ESP possible en entrée pour les non utilisateur du PVbrain ou autres raison ... 6 montage possible : (déport de toutes les sorties et récupération de l'i2c via pontages) :
- >   - ESP8266 D1 Mini
- >   - ESP32 D1 Mini
- >   - ESP32 S2 Mini
- >   - ESP32 C3
- >   - ESP32 C3 Zero
- >   - ESP32 S3 Zero
+ >   - [ESP8266 D1 Mini](https://s.click.aliexpress.com/e/_DmbvqH7)
+ >   - [ESP32 D1 Mini](https://s.click.aliexpress.com/e/_DEU8tVB)
+ >   - [ESP32 S2 Mini](https://s.click.aliexpress.com/e/_DdgwMVF)
+ >   - [ESP32 C3](https://s.click.aliexpress.com/e/_DFystRx)
+ >   - [ESP32 C3 Zero](https://s.click.aliexpress.com/e/_DeIlFtn)
+ >   - [ESP32 S3 Zero](https://s.click.aliexpress.com/e/_DeIlFtn)
+
+D'autres infos et lien sur <sub>[![Google Docs](https://img.shields.io/badge/Google_Docs-_-black?logo=google&style=social)](https://docs.google.com/spreadsheets/d/e/2PACX-1vQqTCFvosqLe3oL8kCYauC0Lip-PFoYXdSaXtiM5O0mfbqNR286LAmPG_ngkzn3vveCUbP-QugC6HAZ/pubhtml#gid=165666371)</sub>
 
 ## Le code ESPHome :
 Le code est simplifié pour la modification via `packages:` et `substitutions:`. 
